@@ -8,7 +8,7 @@ function Home() {
     const timer = setTimeout(() => setShowIntro(false), 3000)
     return () => clearTimeout(timer)
   }, [])
-
+ 
   return (
     <div className="hero min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-black animate__animated animate__fadeIn">
       <div className="hero-overlay bg-opacity-60"></div>
@@ -20,7 +20,7 @@ function Home() {
             </div>
           )}
           <div className="card bg-base-200 bg-opacity-80 p-6 shadow-xl rounded-lg">
-            <h1 className="text-5xl font-bold mb-4 text-white animate__animated animate__fadeInDown">Cyber Hygiene Self-Assessment Quiz</h1>
+            <h1 className="text-5xl font-bold mb-4 text-white animate__animated animate__fadeInDown">Cyber Hygiene Self-Assessment Survey</h1>
             <p className="text-lg mb-6 text-gray-300 animate__animated animate__fadeInUp">
               Test your awareness of real-world social engineering threats like phishing, impersonation, and data exposure risks with 20 challenging questions.
             </p>
@@ -30,7 +30,7 @@ function Home() {
             </div>
             <div className="collapse collapse-arrow bg-base-100 mb-4">
               <input type="checkbox" />
-              <div className="collapse-title text-lg font-medium text-gray-200">Why Take This Quiz?</div>
+              <div className="collapse-title text-lg font-medium text-gray-200">Why Take This Survey?</div>
               <div className="collapse-content text-gray-300">
                 <p>Enhance your cybersecurity skills, identify vulnerabilities, and learn best practices to stay safe online.</p>
               </div>
@@ -39,7 +39,7 @@ function Home() {
               to="/quiz"
               className="btn btn-primary btn-lg text-white hover:bg-primary-focus hover:scale-105 transition-transform duration-300 animate__animated animate__pulse"
             >
-              Start Quiz Now!
+              Start Survey Now!
             </Link>
           </div>
         </div>

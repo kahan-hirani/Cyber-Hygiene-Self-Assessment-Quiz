@@ -10,6 +10,6 @@ function ResultPage() {
       <Result score={score} total={total} feedback={feedback} questions={questions} answers={answers} />
     </div>
   )
-}
+} 
 
 export default ResultPage

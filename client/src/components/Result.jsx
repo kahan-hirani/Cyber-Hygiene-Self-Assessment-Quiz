@@ -14,7 +14,7 @@ function Result({ score, total, feedback, questions, answers }) {
     return userAnswer === question.correctAnswer
       ? { text: "Correct!", color: "text-success" }
       : { text: `Incorrect. ${question.info}`, color: "text-error" };
-  };
+  }; 
 
   const handleViewReport = () => {
     setIsLoading(true);

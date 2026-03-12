@@ -7,7 +7,7 @@ function Quiz({ questions, onComplete }) {
   const handleAnswer = (answer) => {
     const newAnswers = [...answers, { questionId: questions[currentQuestion]._id, answer }]
     setAnswers(newAnswers)
-
+ 
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1)
     } else {
@@ -18,7 +18,7 @@ function Quiz({ questions, onComplete }) {
   if (!questions || questions.length === 0) {
     return <div className="alert alert-error">No questions available</div>
   }
-
+ 
   const progress = ((currentQuestion + 1) / questions.length) * 100
 
   return (

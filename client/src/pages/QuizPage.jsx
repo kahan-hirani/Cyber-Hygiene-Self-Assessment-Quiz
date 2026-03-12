@@ -28,5 +28,5 @@ function QuizPage() {
     </div>
   )
 }
-
+ 
 export default QuizPage
